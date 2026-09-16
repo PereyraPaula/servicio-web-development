@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
+  publicDir: resolve(dirname, 'public'),
   root: resolve(dirname, 'src'),
   build: {
     outDir: resolve(dirname, 'dist'),

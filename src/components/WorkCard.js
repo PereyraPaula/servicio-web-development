@@ -61,7 +61,7 @@ class TrabajoCard extends HTMLElement {
           box-shadow: var(--shadow);
           overflow: hidden;
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr 60%;
           gap: 2rem;
           padding: 2.5rem;
           align-items: center;
@@ -149,6 +149,7 @@ class TrabajoCard extends HTMLElement {
           box-shadow: 0 4px 20px rgba(0,0,0,0.08);
           background: #fff;
           height: 100%;
+          max-height: 645px;
           min-width: 0; /* Evita desbordes */
         }
 
@@ -229,7 +230,7 @@ class TrabajoCard extends HTMLElement {
           right: 12px;
           background: rgba(0, 0, 0, 0.85);
           color: #fff;
-          font-size: 0.7rem;
+          font-size: 1rem;
           font-weight: 600;
           padding: 0.4rem 0.8rem;
           border-radius: 6px;
