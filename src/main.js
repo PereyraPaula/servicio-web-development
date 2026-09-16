@@ -1,4 +1,5 @@
 import "./components/MetricCard.js"
+import "./components/WorkSlider.js"
 
 const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
