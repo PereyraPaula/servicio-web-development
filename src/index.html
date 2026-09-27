@@ -10,7 +10,7 @@
 </head>
 
 <body class="font-sans">
-  <nav class="text-gray-600 body-font border-b border-b-gray-300 fixed w-full bg-white z-10">
+  <nav class="text-gray-600 body-font border-b border-b-gray-300 fixed w-full bg-white z-20">
     <div class="container mx-auto flex flex-wrap p-5 items-center justify-between md:justify-start">
 
       <!-- LOGO -->
@@ -324,13 +324,123 @@
       </div>
     </div>
   </section>
-  <section class="bg-white min-h-screen body-font py-12">
+  <section class="bg-white min-h-screen body-font py-16">
     <div class="container mx-auto">
       <trabajos-slider></trabajos-slider>
     </div>
   </section>
-  <section class="bg-neutral-100 py-16 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-6xl mx-auto bg-white rounded-3xl shadow-sm p-8 sm:p-12 lg:p-16">
+  <section class="bg-neutral-100 min-h-screen py-16 px-4 sm:px-6 lg:px-8 body-font">
+    <div class="container mx-auto p-8 sm:p-12 lg:p-16">
+      <!-- Encabezado -->
+      <div class="mb-12">
+        <p class="text-sm font-medium text-gray-500 uppercase tracking-wider mb-2">Metodología clara</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          De la idea a tu web lista: un proceso ágil en 4 pasos
+        </h2>
+        <p class="text-lg text-gray-600 max-w-3xl">
+          Sin vueltas ni reuniones innecesarias. Un flujo de trabajo estructurado para transformar tu propuesta en un
+          sitio rápido y efectivo:
+        </p>
+      </div>
+
+      <!-- Pasos -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Paso 01 -->
+        <article class="bg-white border-2 border-gray-200 p-6 flex flex-col transition-colors hover:border-secondary">
+          <p class="text-4xl font-bold text-gray-800 mb-4">01</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Consulta inicial</h3>
+          <p class="text-sm text-gray-600 mb-6 flex-1">
+            Completás el formulario al final de esta página con los datos básicos. Analizo si tu proyecto encaja con los
+            tipos de sitios que desarrollo y te envío una propuesta clara con presupuesto cerrado.
+          </p>
+          <div class="flex items-center gap-2 text-sm text-gray-500">
+            <!-- Icono SVG iría aquí -->
+            <span>
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m11 19 9 2v-2l1-1-1-1-1-1h-2l-1-1q0 0 0 0l-1 1zm-4-3Q3 12 3 4h2l1-1 1 1 1 1v2l1 1q0 0 0 0L8 9l-3 4M21 3 3 21"
+                  style="--darkreader-inline-stroke:var(--darkreader-text-000000, #e8e6e3)" />
+              </svg>
+            </span>
+            <span>Sin llamadas innecesarias</span>
+          </div>
+        </article>
+
+        <!-- Paso 02 -->
+        <article class="bg-white border-2 border-gray-200 p-6 flex flex-col transition-colors hover:border-secondary">
+          <p class="text-4xl font-bold text-gray-800 mb-4">02</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Entrega de contenidos</h3>
+          <p class="text-sm text-gray-600 mb-6 flex-1">
+            Una vez aprobado el presupuesto, me enviás tus contenidos (textos, fotos/videos) y tu diseño o páginas de
+            referencia. Tener <strong>todo el material listo desde el día uno</strong> es la clave para no demorar los
+            plazos.
+          </p>
+          <div class="flex items-center gap-2 text-sm text-gray-500">
+            <!-- Icono SVG iría aquí -->
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24">
+                <path
+                  d="M10 15h12v1H10zm-4-3h2v-2H6zm4-1h12v-1H10zm-4 6h2v-2H6zm4 4h12v-1H10zm-4 1h2v-2H6zM23 3v3l-1 1H2L1 6V3l1-1h20zm-1 3V3H2v3z" />
+                <path fill="none" d="M0 0h24v24H0z" />
+              </svg>
+            </span>
+            <span>Material y referencias listas</span>
+          </div>
+        </article>
+
+        <!-- Paso 03 -->
+        <article class="bg-white border-2 border-gray-200 p-6 flex flex-col transition-colors hover:border-secondary">
+          <p class="text-4xl font-bold text-gray-800 mb-4">03</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Desarrollo y código</h3>
+          <p class="text-sm text-gray-600 mb-6 flex-1">
+            Como programadora, me enfoco en maquetar y codificar una web rápida, limpia y optimizada para buscadores y
+            celulares. Sin rellenos ni código pesado: solo lo que tu negocio necesita para funcionar bien.
+          </p>
+          <div class="flex items-center gap-2 text-sm text-gray-500">
+            <!-- Icono SVG iría aquí -->
+            <span>
+              <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m7 8-4 4 4 4m10-8 4 4-4 4M14 4l-4 16"
+                  style="--darkreader-inline-stroke:var(--darkreader-text-000000, #e8e6e3)" />
+              </svg>
+            </span>
+            <span>Código limpio y optimizado</span>
+          </div>
+        </article>
+
+        <!-- Paso 04 -->
+        <article class="bg-white border-2 border-gray-200 p-6 flex flex-col transition-colors hover:border-secondary">
+          <p class="text-4xl font-bold text-gray-800 mb-4">04</p>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Revisión y lanzamiento</h3>
+          <p class="text-sm text-gray-600 mb-6 flex-1">
+            <span>Hay dos opciones:</span><br />
+            <span>Si no tenés un sitio activo: trabajamos directamente en el dominio definitivo.</span><br />
+            <span>Si ya tenés un sitio que no puede ponerse en mantenimiento: desarrollamos en un entorno de prueba. Con
+              tu aprobación final, lo publicamos en el dominio definitivo y lo dejamos listo para recibir
+              clientes.</span>
+          </p>
+          <div class="flex items-center gap-2 text-sm text-gray-500">
+            <!-- Icono SVG iría aquí -->
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24">
+                <g data-name="Stream On">
+                  <path d="M6 19A10 10 0 0 1 6 5V4a11 11 0 0 0 0 16z" />
+                  <path d="M9 16a5 5 0 0 1 0-8H8a6 6 0 0 0 0 8z" />
+                  <circle cx="12" cy="12" r="1.2" />
+                  <path d="M18 5a10 10 0 0 1 0 14v1a11 11 0 0 0 0-16z" />
+                  <path d="M15 8a5 5 0 0 1 0 8h1a6 6 0 0 0 0-8z" />
+                </g>
+              </svg>
+            </span>
+            <span>100% Autónomo y en vivo</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto bg-neutral-50 rounded-3xl shadow-sm p-8 sm:p-12 lg:p-16">
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
@@ -345,63 +455,80 @@
               ¿Listo para impulsar tu web?
             </h2>
             <p class="text-base text-neutral-600 leading-relaxed max-w-md">
-              Cuéntanos sobre tu negocio y lo que necesitas. Evaluamos tu proyecto sin compromiso y te enviamos una propuesta a la medida de tu presupuesto.
+              Cuéntanos sobre tu negocio y lo que necesitas. Evaluamos tu proyecto sin compromiso y te enviaremos una
+              respuesta.
             </p>
           </header>
         </div>
 
         <!-- Columna Derecha: Formulario -->
-        <form class="bg-neutral-50 border border-neutral-100 rounded-2xl p-6 sm:p-8 flex flex-col gap-6">
+        <form class="bg-white border-2 border-secondary p-6 sm:p-8 flex flex-col gap-6" id="formulario-presupuesto">
 
           <div class="flex flex-col gap-2">
             <label for="nombre" class="text-xs font-bold text-neutral-900">
-              Tu nombre / empresa
+              Nombre completo <span class="text-red-500">*</span>
             </label>
-            <input
-              type="text"
-              id="nombre"
-              name="nombre"
-              placeholder="Ej. Juan Pérez o Mi Empresa S.A."
-              class="w-full bg-white border border-neutral-200 rounded-lg px-4 py-3 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition"
-            >
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez o Mi Empresa S.A."
+              class="w-full bg-white border border-neutral-200 rounded-lg px-4 py-3 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition">
           </div>
 
           <div class="flex flex-col gap-2">
-            <label for="contacto" class="text-xs font-bold text-neutral-900">
-              Correo electrónico
+            <label for="email" class="text-xs font-bold text-neutral-900">
+              Correo electrónico <span class="text-red-500">*</span>
             </label>
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="tu@correo.com"
-              class="w-full bg-white border border-neutral-200 rounded-lg px-4 py-3 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition"
-            >
+            <input type="email" id="email" name="email" required placeholder="tu@correo.com"
+              class="w-full bg-white border border-neutral-200 rounded-lg px-4 py-3 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition">
           </div>
+
           <div class="flex flex-col gap-2">
-            <label for="tipo-sitio" class="text-xs font-bold text-neutral-900">
-              ¿Qué tipo de sitio web necesitas?
+            <label for="tipo-proyecto" class="text-xs font-bold text-neutral-900">
+              ¿Qué escala o tipo de proyecto tienes en mente? <span class="text-red-500">*</span>
             </label>
-            <select
-              id="tipo-sitio"
-              name="tipo-sitio"
-              class="w-full bg-white border border-neutral-200 rounded-lg px-4 py-3 text-sm text-neutral-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition appearance-none cursor-pointer"
-            >
-              <option value="" disabled selected>Landing page de alta conversión</option>
-              <option value="ecommerce">E-commerce</option>
-              <option value="corporativo">Sitio corporativo</option>
-              <option value="portfolio">Portafolio</option>
-              <option value="otro">Otro</option>
+            <select id="tipo-proyecto" name="tipo-proyecto" required
+              class="w-full bg-white border rounded-lg px-4 py-3 text-sm text-neutral-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition appearance-none cursor-pointer">
+              <option value="" disabled selected>Seleccioná una opción</option>
+              <option value="landing">Landing Page / Web Simple (Para mostrar mis servicios y recibir consultas
+                rápidas)</option>
+              <option value="completo">Sitio Web Profesional Completo (Multi-página, catálogo, SEO y optimización)
+              </option>
+              <option value="medida">Desarrollo a Medida (Integraciones, lógica
+                personalizada, código a medida. No incluye E-commerce)</option>
+              <!-- <option value="ecommerce">Tienda Online / E-commerce (Para vender productos directamente)</option> -->
+              <option value="asesoramiento">Aún no lo sé</option>
             </select>
           </div>
-          <button
-            type="submit"
-            class="w-full bg-secondary text-neutral-900 font-bold text-sm py-4 rounded-lg flex items-center justify-center gap-2 hover:brightness-95 active:scale-[0.99] transition"
-          >
-            Solicitar presupuesto
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M5 12h14"/>
-              <path d="m12 5 7 7-7 7"/>
+
+          <div class="flex flex-col gap-2">
+            <label for="hosting-dominio" class="text-xs font-bold text-neutral-900">
+              ¿Ya cuentas con Hosting y Dominio? <span class="text-red-500">*</span>
+            </label>
+            <select id="hosting-dominio" name="hosting-dominio" required
+              class="w-full bg-white border rounded-lg px-4 py-3 text-sm text-neutral-900 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-secondary transition appearance-none cursor-pointer">
+              <option value="" disabled selected>Seleccioná una opción</option>
+              <option value="si">Sí, ya tengo hosting y dominio</option>
+              <option value="solo-dominio">Solo tengo el dominio (.com / .com.ar)</option>
+              <option value="nada">No tengo nada todavía / Necesito asesoramiento</option>
+            </select>
+          </div>
+
+          <div class="flex flex-col gap-2 transition-all duration-300" id="contenedor-detalle">
+            <label for="detalle" class="text-xs font-bold text-neutral-900" id="label-detalle">
+              ¿Quieres contarnos algún detalle extra sobre tu idea? <span
+                class="text-neutral-400 font-normal">(Opcional)</span>
+            </label>
+            <textarea id="detalle" name="detalle" rows="3"
+              class="w-full bg-white border border-neutral-200 rounded-lg px-4 py-3 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-secondary transition resize-none"
+              placeholder="Contanos un poco más..."></textarea>
+          </div>
+
+          <!-- Botón final -->
+          <button type="submit"
+            class="w-full bg-secondary text-neutral-900 font-bold text-sm py-4 rounded-lg flex items-center justify-center gap-2 hover:brightness-95 active:scale-[0.99] transition">
+            <span id="texto-boton">Enviar</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
             </svg>
           </button>
         </form>
@@ -418,7 +545,7 @@
             <span class="w-2 h-2 rounded-full bg-secondary inline-block" aria-hidden="true"></span>
           </a>
           <p class="text-sm text-neutral-500 leading-relaxed">
-            TODO
+            Desarrollo web para negocios y pequeñas empresas.
           </p>
         </div>
 
@@ -444,7 +571,8 @@
 
         <p class="uppercase tracking-widest text-[11px] font-medium text-neutral-500">
           Desarrollado por
-          <a target="_blank" href="pereyrapaula.com.ar" class="text-neutral-900 font-bold hover:text-secondary transition">
+          <a target="_blank" href="http://www.pereyrapaula.com.ar"
+            class="text-neutral-900 font-bold hover:text-secondary transition">
             Paula Pereyra
           </a>
         </p>

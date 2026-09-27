@@ -13,10 +13,10 @@ export const trabajos = [
   {
     id: 2,
     titulo: "Computel",
-    categoria: "Tecnología",
+    categoria: "Catálogo de productos",
     imagen: "/images/computel.webp",
     desafio: "Reconstrucción de la página tras un ataque DDoS y virus, manteniendo el diseño original y el control del panel de administración.",
-    solucion: "Reconstrucción de la página con enfoque en seguridad (configuración de Cloudflare y bloqueos). Desarrollo de personalizaciones en el panel de administración mediante un plugin.",
+    solucion: "Reconstrucción de la página, configuración de la seguridad en Cloudflare y ajustes manuales, incorporación de bloqueos y desarrollo de una característica adicional para un usuario con rol de reparador, para precios con descuento.",
     resultado: "Web en desarrollo continuo, con optimizaciones de rendimiento (carga dinámica de estilos, servicio externo para traer imágenes, etc.).",
     estado: "Sitio en producción",
     url: "https://computelweb.com.ar"

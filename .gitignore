@@ -24,4 +24,5 @@ dist-ssr
 *.sw?
 
 *.txt
+text.md
 .env
