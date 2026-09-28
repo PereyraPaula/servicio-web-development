@@ -1,22 +1,22 @@
-import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
+import { fileURLToPath } from 'node:url'
+import { dirname, resolve } from 'node:path'
 
-const dirname = import.meta.dirname;
+const projectDir = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  publicDir: resolve(dirname, 'public'),
-  root: resolve(dirname, 'src'),
+
+  root: resolve(projectDir, 'src'),
+  publicDir: resolve(projectDir, 'public'),
+
   build: {
-    outDir: resolve(dirname, 'dist'),
+    minify: 'esbuild',
+    cssMinify: 'esbuild',
+    outDir: resolve(projectDir, 'dist'),
     emptyOutDir: true,
-    rollupOptions: {
-      input: {
-        main: resolve(dirname, 'src/index.html'),
-      },
-    },
   },
-});
+})
