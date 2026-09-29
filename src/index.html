@@ -536,6 +536,10 @@
           </button>
 
           <div id="message-form"></div>
+
+          <small class="text-gray-400">Tus datos solo se usarán para responder a tu consulta sobre presupuestos. No se
+            comparten con
+            nadie.</small>
         </form>
       </div>
     </div>
@@ -580,10 +584,66 @@
             class="text-neutral-900 font-bold hover:text-secondary transition">
             Paula Pereyra
           </a>
+          |
+          <button class="boton" id="abrirModal">
+            Política de Privacidad
+          </button>
         </p>
       </div>
     </div>
   </footer>
+  <div class="modal" id="modal">
+    <div class="modal-contenido">
+      <button class="cerrar" id="cerrarModal" aria-label="Cerrar modal">
+        &times;
+      </button>
+
+      <h1 class="text-2xl">Política de Privacidad</h1>
+
+      <p class="text-[13px] text-gray-800 mb-2">
+        En ContenidosOnline (Paula Pereyra), respetamos tu privacidad y nos comprometemos a proteger los datos
+        personales
+        que nos compartas.
+      </p>
+
+      <p class="text-[13px] text-gray-800 mb-2">
+        <strong>¿Qué datos recopilamos?</strong> A través de nuestro formulario de contacto, recopilamos tu nombre, tu
+        correo electrónico
+        y
+        la información o detalles sobre tu proyecto web que decidas escribirnos.
+      </p>
+
+      <p class="text-[13px] text-gray-800 mb-2">
+        <strong>¿Para qué utilizamos tus datos?</strong> La única finalidad de recopilar esta información es ponernos en
+        contacto contigo
+        para responder a tu consulta, elaborar un presupuesto personalizado y gestionar la comunicación sobre los
+        servicios
+        de desarrollo web solicitados.
+      </p>
+
+      <p class="text-[13px] text-gray-800 mb-2">
+        <strong>¿Compartimos tus datos con terceros?</strong> No. Tus datos son totalmente confidenciales. No se venden,
+        ceden ni
+        comparten
+        con ninguna otra empresa o persona ajena a nuestro servicio.
+      </p>
+
+      <p class="text-[13px] text-gray-800 mb-2">
+        <strong>Seguridad</strong>: Implementamos las medidas necesarias para mantener tu información segura.
+      </p>
+
+      <p class="text-[13px] text-gray-800 mb-2">
+        Tus derechos: Puedes escribirnos en cualquier momento para solicitar el acceso, modificación o eliminación de
+        tus
+        datos de nuestros registros.
+      </p>
+
+
+      <button class="boton" id="aceptar">
+        Aceptar
+      </button>
+    </div>
+  </div>
 </body>
 
 </html>

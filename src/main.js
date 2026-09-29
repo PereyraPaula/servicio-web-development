@@ -3,6 +3,28 @@ import "./components/WorkSlider.js"
 
 const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
+const modal = document.getElementById("modal");
+const abrirModal = document.getElementById("abrirModal");
+const cerrarModal = document.getElementById("cerrarModal");
+const aceptar = document.getElementById("aceptar");
+
+abrirModal.addEventListener("click", () => {
+    modal.classList.add("activo");
+});
+
+cerrarModal.addEventListener("click", () => {
+    modal.classList.remove("activo");
+});
+
+aceptar.addEventListener("click", () => {
+    modal.classList.remove("activo");
+});
+
+modal.addEventListener("click", (evento) => {
+    if (evento.target === modal) {
+        modal.classList.remove("activo");
+    }
+});
 
 btn.addEventListener('click', () => {
   menu.classList.toggle('hidden');
