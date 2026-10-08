@@ -1,0 +1,48 @@
+name: Deploy static content to Pages
+
+on:
+  push:
+    branches: ["main"] # Cambia a "master" si corresponde
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Utiliza la nueva acción oficial recomendada a partir de pnpm v11
+      - name: Setup pnpm and Node
+        uses: pnpm/setup@v3
+        with:
+          version: 11.24.0
+          runtime: node@20
+          cache: true # Activa automáticamente la caché del monorepo
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist # Tu carpeta outDir de Vite
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
